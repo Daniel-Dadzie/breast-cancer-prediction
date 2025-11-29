@@ -424,10 +424,12 @@ elif st.session_state.current_page == 'About':
     - **Accuracy**: {metadata['accuracy']:.1%}
 
     ## 📊 Dataset Source
-    [Wisconsin Breast Cancer Dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html#breast-cancer-dataset)
-
-    ## ⚠️ Important Disclaimer
-    This tool is for educational and screening purposes only. Always consult healthcare professionals for medical advice.
+    [Wisconsin Breast Cancer Dataset](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)
+ 
+    ## 🤖 Model Development 
+    The model was developed using Python's scikit-learn library, employing advanced preprocessing and hyperparameter tuning to achieve optimal performance. 
+    ## 🛠️ Development Team  
+    **GROUP TWO**
     """)
 
 elif st.session_state.current_page == 'How to Use':
@@ -477,7 +479,7 @@ elif st.session_state.current_page == 'Contact':
     **GROUP TWO**
 
     ## 📧 Contact Information
-    - **Email**: group2@example.com
+    - **Email**: group2@gmail.com
     - **Project**: Breast Cancer AI Predictor
     - **Version**: 1.0.0
 
