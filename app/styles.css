@@ -1,0 +1,224 @@
+/* Dark Mode Colors */
+:root {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+    --bg-card: #0f3460;
+    --text-primary: #eaeaea;
+    --text-secondary: #b8b8b8;
+    --accent-primary: #e94560;
+    --accent-secondary: #533483;
+    --gradient-1: #2d3561;
+    --gradient-2: #c05c7e;
+    --shadow: rgba(0, 0, 0, 0.5);
+}
+
+/* Dark mode background */
+.stApp {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+/* Header styling - Dark */
+.main-header {
+    background: linear-gradient(135deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px var(--shadow);
+}
+
+.main-header h1 {
+    color: var(--text-primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.main-header p {
+    color: black;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+/* Card styling - Dark */
+.metric-card {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow);
+    text-align: center;
+    border-top: 3px solid var(--accent-primary);
+    transition: transform 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--shadow);
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    margin: 0.5rem 0;
+}
+
+.metric-label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Result cards - Dark */
+.result-card-benign {
+    background: linear-gradient(135deg, #1e5245 0%, #2d5a6e 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 1rem 0;
+    box-shadow: 0 10px 30px var(--shadow);
+    color: #84fab0;
+}
+
+.result-card-malignant {
+    background: linear-gradient(135deg, #7e2b3a 0%, #9e5b2a 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 1rem 0;
+    box-shadow: 0 10px 30px var(--shadow);
+    color: #fca5a5;
+}
+
+.result-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.probability-bar {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* Input styling - Dark */
+.stNumberInput > div > div > input {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-radius: 8px;
+    border: 2px solid var(--bg-card);
+    transition: border-color 0.3s ease;
+    -webkit-appearance: textfield; /* Show stepper */
+    -moz-appearance: textfield;
+}
+
+.stNumberInput > div > div > input::-webkit-outer-spin-button,
+.stNumberInput > div > div > input::-webkit-inner-spin-button {
+    -webkit-appearance: auto; /* Ensure stepper is visible */
+    margin: 0;
+}
+
+.stNumberInput > div > div > input:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.2);
+}
+
+/* Tab styling - Dark */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    background-color: var(--bg-secondary);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: var(--bg-card);
+    color: var(--text-primary) !important;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 600;
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+    background-color: var(--accent-primary);
+}
+
+/* Button styling - Dark */
+.stButton > button {
+    background-color: var(--accent-primary);
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(233, 69, 96, 0.4);
+    background-color: #ff5574;
+}
+
+/* Sidebar styling - Dark */
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+}
+
+[data-testid="stSidebar"] * {
+    color: var(--text-primary) !important;
+}
+
+/* Navbar styles */
+.navbar {
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Remove column dividers in navbar */
+.navbar [data-testid="column"] {
+    border: none !important;
+    padding: 0 !important;
+}
+
+/* Additional dark mode styles */
+.stMarkdown {
+    color: var(--text-primary);
+}
+
+.stAlert {
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+}
+
+/* Input labels */
+.stNumberInput label {
+    color: var(--text-primary) !important;
+}
+
+/* Tab labels */
+.stTabs [data-baseweb="tab"] {
+    color: var(--text-primary) !important;
+}
+
+/* Button text */
+.stButton > button {
+    color: white !important;
+}
